@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 300px; 
+}
+
+/* 各ボックス */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; 
+    background-color: black; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    background-color: black; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.6%; 
+    background-color: black; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
