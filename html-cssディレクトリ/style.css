@@ -41,3 +41,29 @@
     font-weight: bold;
     box-sizing: border-box;
 }
+
+form{
+    display:flex;
+    background-color: #2b2e36;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: white;
+  }
+
+input {
+    background-color: #acb9db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+
+  button{
+    background-color: rgb(15, 98, 243);
+    color:white;
+  }
