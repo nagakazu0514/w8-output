@@ -1,54 +1,85 @@
+
+.section{
+    align-items:center;
+}
+
+h2{
+    text-align:center;
+}
+
 .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
     height: 300px; 
 }
 
-/* 各ボックス */
+.grid-2 > .box {
+    width: 50%;
+}
+
+.grid-6 > .box {
+    width:16.6%
+}
+
+/* ボックスの共通スタイル */
+.grid-4 > .box{
+    width:25%;
+}
+
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%; 
-    background-color: black; 
+    background-color: black;
     color: white;
     font-size: 20px;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-.box1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%; 
-    background-color: black; 
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-.box2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 16.6%; 
-    background-color: black; 
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-
-form{
     display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    border:1px white solid;
+}
+
+/*
+form
+*/
+
+.form{
     background-color: #2b2e36;
+    padding-bottom:10px;
+    width:800px;
+    margin:10px auto;
+}
+
+table{
+    padding:30px;
+    margin:0 auto;
+}
+
+th{
+    text-align:left;
+    padding-right:20px;
+}
+
+td input{
+    min-width: 500px;
+    padding:8px;
+}
+
+.action{
+    display:block;
+    text-align: center;
+  }
+
+.action button{
+    margin-bottom:10px;
 }
 
 label {
-    margin-bottom: 5px;
+    margin: 5px;
     font-size: 0.9em;
     color: white;
   }
@@ -64,6 +95,13 @@ input {
   }
 
   button{
-    background-color: rgb(15, 98, 243);
+    background-color:rgb(85, 181, 255);
+    border:1px #2b2e36 solid;
     color:white;
+    width:100px;
+    height:30px;
+  }
+
+  .action > p {
+    color:rgba(255, 255, 255, 0.751);
   }

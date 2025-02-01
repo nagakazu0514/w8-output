@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
         <h2>1.横4✖️縦4</h2>
-        <div class="container">
+        <div class="container grid-4">
             <div class="box">01</div>
             <div class="box">02</div>
             <div class="box">03</div>
@@ -28,30 +29,48 @@
         </div>
 
         <h2>2.横2✖️縦2</h2>
-        <div class="container">
-            <div class="box1">01</div>
-            <div class="box1">02</div>
-            <div class="box1">03</div>
-            <div class="box1">04</div>
+        <div class="container grid-2">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
         </div>
 
         <h2>3.横6✖️縦1</h2>
-        <div class="container">
-            <div class="box2">01</div>
-            <div class="box2">02</div>
-            <div class="box2">03</div>
-            <div class="box2">04</div>
-            <div class="box2">05</div>
-            <div class="box2">06</div>
+        <div class="container grid-6">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
         </div>
     </div>
+
     <form class="form" action="">
-        <label for="email">Your email</label>
-        <input type="email" id="email">
-        <label for="password">Your password</label>
-        <input type="password" id="password">
-        <button type="submit">Sign in</button>
+        <table>
+            <tr>
+                <th>
+                    <label for="email">Your email</label>
+                </th>
+                <td>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="password">Your password</label>
+                </th>
+                <td>
+                    <input type="password" id="password">
+                </td>
+            </tr>
+        </table>
+        <div class="action">
+            <button type="submit">Sign in</button>
+            <p>Don’t have an account yet? <a href="#">Sign up</a></p>
+        </div>
     </form>
-    <p>Don’t have an account yet? <a href="#">Sign up</a></p>
+    <script src="./javascript/localstorage.js"></script>
 </body>
 </html>
